@@ -1,0 +1,15 @@
+.container {
+    width: 70%;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    margin: 50px;
+}
+
+.cardPrice {
+    text-align: center;
+}
