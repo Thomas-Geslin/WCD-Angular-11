@@ -13,8 +13,11 @@ export class CocktailListComponent {
 
   cocktails: Array<Cocktail> = [];
 
-  ngOnInit() {
-    this.cocktails = this.cocktailService.getCocktails();
+  ngOnInit(): void {
+    this.cocktailService.getCocktails().subscribe(cocktailsFromJsonFile => {
+      this.cocktails = cocktailsFromJsonFile;
+      console.log(this.cocktails)
+    });
   }
 
 }
